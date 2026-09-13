@@ -1,0 +1,19 @@
+## README
+本プロジェクトは、ファミコン版初代ウィザードリィクローンを109人オンライン同時プレイできるようにするプロジェクトです。
+Oixizardry109online（おいィ？ざーどりィ・てんないん・おんらいん）
+
+
+初期インフラ構成
+[Webフロント] → [Rails API] → [PostgreSQL]
+
+中間インフラ構成
+[Unity/Web] ←→ [Goゲームサーバー] ←→ [Redis]
+                      ↓
+                 [PostgreSQL]
+                      ↑
+                 [Rails Admin]
+
+最終インフラ構成
+[Unity] ←→ [Goゲームサーバー（AWS ECS）] ←→ [Redis（ElastiCache）]
+   ↑                 ↓
+[Webフロント] ←→ [Rails Admin（EC2）] ←→ [PostgreSQL（RDS）]
