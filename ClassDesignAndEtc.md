@@ -11,13 +11,19 @@ Inventory
  Inventory.drop
  Inventory.trade
 
- Spell
+Spell
  
  
 
 Monster
 Enemy
 
+Group.name, Group.count, Group.unit_count, Group.active_unit_count
+Group.ac
+Group.unit
+Group.unit.conditions
+Group.unit.hp
+Group.unit.attack, parry, flee, MSpell, PSpell, EnergyDrain, Poison, Stone, Paralyze, Breath, 
 
 
 
