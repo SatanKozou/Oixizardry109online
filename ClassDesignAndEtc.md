@@ -1,5 +1,24 @@
 クラス設計等
 
+Character
+Party
+
+Item
+Inventory
+ Inventory.Identify
+ Inventory.equip
+ Inventory.use
+ Inventory.drop
+ Inventory.trade
+
+ Spell
+ 
+ 
+
+Monster
+Enemy
+
+
 
 
 マップ関連
